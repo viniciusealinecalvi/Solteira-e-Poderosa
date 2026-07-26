@@ -112,8 +112,24 @@ if('scrollRestoration' in history){ history.scrollRestoration = 'manual'; }
 <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
 <div class="timerbar">
-  <span class="timer-tag">Oferta de lançamento</span>
-  <span>Essa condição termina em <span class="timer-clock" aria-hidden="true">⏰ <span id="clock">15:00</span></span></span>
+  <div class="timerbar-inner">
+    <span class="timerbar-badge">
+      <span class="timerbar-dot" aria-hidden="true"></span>
+      Oferta de lançamento
+    </span>
+    <span class="timerbar-msg">Essa condição especial termina em:</span>
+    <div class="timer-clock" aria-hidden="true">
+      <div class="timer-box">
+        <span class="timer-num" id="clock-min">15</span>
+        <span class="timer-unit">min</span>
+      </div>
+      <span class="timer-colon">:</span>
+      <div class="timer-box">
+        <span class="timer-num" id="clock-sec">00</span>
+        <span class="timer-unit">seg</span>
+      </div>
+    </div>
+  </div>
 </div>
 
 <header class="hero">

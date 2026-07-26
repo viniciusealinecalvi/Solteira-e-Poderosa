@@ -8,7 +8,8 @@
   } else {
     deadline = parseInt(deadline, 10);
   }
-  var clock = document.getElementById('clock');
+  var clockMin = document.getElementById('clock-min');
+  var clockSec = document.getElementById('clock-sec');
   function tick(){
     var remaining = deadline - Date.now();
     if(remaining <= 0){
@@ -18,7 +19,8 @@
     }
     var m = Math.floor(remaining / 60000);
     var s = Math.floor((remaining % 60000) / 1000);
-    clock.textContent = (m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+    clockMin.textContent = (m<10?'0':'')+m;
+    clockSec.textContent = (s<10?'0':'')+s;
   }
   tick();
   setInterval(tick, 1000);
