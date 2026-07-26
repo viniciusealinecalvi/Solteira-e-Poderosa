@@ -2,6 +2,19 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<script>
+// Impede que o navegador role até uma âncora (#oferta etc.) já no
+// carregamento inicial — isso podia acontecer por autocompletar do
+// navegador, favorito antigo ou histórico, e com scroll-behavior:smooth
+// parecia "a página ficar rolando sozinha" para baixo. Removendo a
+// âncora da URL antes do navegador processar o carregamento, a página
+// sempre abre no topo. Não afeta cliques nos botões, que continuam
+// rolando suavemente até a seção normalmente.
+if(location.hash){
+  history.replaceState(null, '', location.pathname + location.search);
+}
+if('scrollRestoration' in history){ history.scrollRestoration = 'manual'; }
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Solteira e Poderosa — Como Transformar o Término em Seu Maior Recomeço</title>
 <meta name="description" content="O passo a passo acolhedor que tira você do &quot;eu não sei nem por onde começar&quot; e te leva, capítulo por capítulo, de volta para a mulher que você sempre foi.">
@@ -35,10 +48,7 @@
 <link rel="preload" as="image" href="img/hero.png" fetchpriority="high">
 <link rel="stylesheet" href="css/style.css">
 
-<script>
-if('scrollRestoration' in history){ history.scrollRestoration = 'manual'; }
-document.documentElement.classList.add('js');
-</script>
+<script>document.documentElement.classList.add('js');</script>
 
 <script type="application/ld+json">
 {
