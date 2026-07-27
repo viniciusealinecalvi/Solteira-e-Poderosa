@@ -141,7 +141,15 @@ a.btn:focus-visible{
 .social-proof-line{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:22px; }
 .hero-image{
   border-radius:22px; overflow:hidden; box-shadow:0 30px 60px -20px rgba(92,47,34,.35);
+}
+.hero-image img{
+  display:block;
+  width:100%;
+  height:auto;
   transform:rotate(1.2deg);
+  transform-origin:center center;
+  -webkit-transform:rotate(1.2deg);
+  -webkit-transform-origin:center center;
 }
 
 /* Value strip */
