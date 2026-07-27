@@ -1,0 +1,14 @@
+{
+  "name": "Solteira e Poderosa",
+  "short_name": "Solteira e Poderosa",
+  "description": "Guia de reconstrução emocional — transforme o término no seu maior recomeço.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF3EE",
+  "theme_color": "#A85D43",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "img/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "img/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
