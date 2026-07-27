@@ -289,7 +289,8 @@ footer .trust{ margin-bottom:10px; }
 
 @media (max-width: 820px){
   .hero-grid, .value-grid, .author-grid{ grid-template-columns:1fr; }
-  .hero-image{ order:-1; }
+  .hero-image{ order:-1; transform:none; }
+  .hero-image img{ transform:none; }
   .learn-grid, .testi-grid{ grid-template-columns:1fr; }
   .bump-grid{ grid-template-columns:repeat(2,1fr); }
   .hero h1{ font-size:32px; }
